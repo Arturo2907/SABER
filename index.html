@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="funcion.js"></script>
+</head>
+<body>
+   <div id="encabezado">
+        <img src="pez Cristiano.png" id="pez">
+        <h1 >SABER</h1>
+        <button id="btn_menu">
+            <img src="menu SABER.png" id="menu">
+            <div class="menu-content">
+                <a href="Cursos.html" class="c-button c-button--gooey">
+                    Cursos
+                <div class="c-button__blobs">
+                    <div></div><div></div><div></div>
+                </div>
+                </a>
+
+                <a href="Estudios_Biblicos.html" class="c-button c-button--gooey">
+                    Estudios Biblicos
+                <div class="c-button__blobs">
+                    <div></div><div></div><div></div>
+                </div>
+                </a>
+
+                <a href="https://wa.me/+525532201591" class="c-button c-button--gooey">
+                    Contacto
+                <div class="c-button__blobs">
+                    <div></div><div></div><div></div>
+                </div>
+                </a>
+            </div>
+        </button>
+    </div>
+
+<svg style="display: none;">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur result="blur" stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+      <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
+      <feBlend in2="goo" in="SourceGraphic"></feBlend>
+    </filter>
+  </defs>
+</svg>
+
+<div class="rectangulo">
+    <h2>¿Quienes somos? </h2>
+</div>
+<div class="texto">
+    <p id="somos">
+        1.Es un educativo basado en valores cristianos,
+        diseñado para jóvenes que buscan terminar su secundaria o preparatoria con excelencia académica
+    </p>
+    <p id="somos">
+        2.Este sistema certificado permite a los jóvenes 
+         seguir estudiando, mediante plataformas y material complementario basado en la UNAM Y POLITECNICO académicamente con en un entorno Cristo céntrico con el fin de resguardar las convicciones bíblicas de los jóvenes.
+    </p>
+</div>
+
+<div class="rectangulo_2">
+    <h2>Misión</h2>
+</div>
+
+<div class="texto2">
+    <p id="Mision">
+    La misión de SABER es ayudar a las personas que quieran terminar u continuar con sus estudios, esto mediante técnicas innovadoras que garantizan tu aprendizaje, en un entorno académico basado en principios cristianos, donde protegemos y fomentamos tus valores durante tu formación.
+</p>  
+</div>
+
+
+<div class="contenedor-video">
+  <video width="320" height="240" controls>
+    <source src="prueba.mp4" type="video/mp4">
+  </video>
+</div>
+</body>
+</html>
