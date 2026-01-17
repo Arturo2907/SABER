@@ -1,0 +1,175 @@
+#encabezado{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#pez{
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 6px 6px rgba(0,0,0,0.25)) drop-shadow(0 14px 18px rgba(0,0,0,0.25));
+}
+
+h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: #162B4E;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+#somos{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: navy;
+    text-decoration: underline;
+    
+}
+
+#Mision{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: navy;
+    text-decoration: underline;
+}
+
+
+#btn_menu {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-left: auto; /* Cambiado de 1000px por flexibilidad */
+    display: block;
+}
+
+#menu{
+    width: 45px;
+    height: 45px;
+    right: 10px;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column; /* Alinea botones hacia abajo */
+    gap: 15px;              /* Espacio entre botones */
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: rgb(255, 255, 255); /* Fondo ligero para ver los botones */
+    border-radius: 15px;
+    z-index: 100;
+}
+
+.menu-content.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* --- Efecto Gooey Adaptado --- */
+.c-button {
+    font-weight: 700;
+    font-size: 14px; /* Tamaño reducido para el menú */
+    text-decoration: none;
+    padding: 0.7em 1.2em;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    min-width: 140px;
+}
+
+.c-button--gooey {
+    color: black;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #06c8d9;
+    border-radius: 999px;
+    transition: all 500ms ease;
+}
+
+.c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo); /* Aquí conecta con el SVG */
+    overflow: hidden;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: -1;
+    border-radius: 999px;
+}
+
+.c-button--gooey .c-button__blobs div {
+    background-color: #06c8d9;
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.5) translateY(125%) translateZ(0);
+    transition: all 500ms ease;
+}
+
+/* Posicionamiento de las burbujas */
+.c-button--gooey .c-button__blobs div:nth-child(1) { left: -5%; }
+.c-button--gooey .c-button__blobs div:nth-child(2) { left: 30%; transition-delay: 60ms; }
+.c-button--gooey .c-button__blobs div:nth-child(3) { left: 66%; transition-delay: 25ms; }
+
+.c-button--gooey:hover {
+    color: #fff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.5) translateY(0) translateZ(0);
+}
+
+/* CSS */
+.contenedor-video {
+    position: relative;
+    top: -400px;
+    margin-left: 1000px;
+}
+
+.rectangulo {
+    width: 200px;         /* Ancho del rectángulo */
+    height: 75px;        /* Alto del rectángulo */
+    border: 2px solid black; /* Borde opcional */
+    margin: 20px;
+    border-radius: 10%;
+}
+
+.rectangulo_2 {
+    width: 180px;         /* Ancho del rectángulo */
+    height: 55px;        /* Alto del rectángulo */
+    border: 2px solid black; /* Borde opcional */
+    margin: 20px;
+    border-radius: 10%;
+}
+
+.texto{
+    width: 800px;
+    height: 150px;
+    padding: 10px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+.texto2{width: 800px;
+    height: 150px;
+    padding: 10px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    overflow: hidden;
+}
